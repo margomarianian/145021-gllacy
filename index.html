@@ -7,8 +7,8 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <img src="/logo.svg" width="153" height="63" alt="Логотип Глейси" />
+      <div class="container clearfix">
+        <img class="logo" src="/logo.svg" width="153" height="63" alt="Логотип Глейси" />
         <nav class="main-navigation">
           <ul>
             <li>
@@ -34,11 +34,11 @@
 
 <!-- Ховер поиска -->
 
-          <div class="search-form">
+          <!-- <div class="search-form">
             <form class="search-form-field" action="index.html" method="post">
               <input type="text" name="search" value="Что ищем?">
             </form>
-          </div>
+          </div> -->
 
 <!-- Конец поиска -->
 
@@ -46,7 +46,7 @@
 
 <!-- Ховер для входа -->
 
-          <div class="signin-form">
+          <!-- <div class="signin-form">
             <form class="signin-form" action="index.html" method="post">
               <input type="text" name="name" value="Электронная почта">
               <input type="password" name="name" value="Пароль">
@@ -56,7 +56,7 @@
                 <a href="#">Новая регистрация</a>
               </p>
             </form>
-          </div>
+          </div> -->
 
 <!-- Конец входа -->
 
@@ -68,7 +68,7 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="slider">
         <input class="radio1" type="radio" name="slider-pagination">
         <input class="radio2" type="radio" name="slider-pagination">
@@ -145,22 +145,24 @@
             </li>
           </ul>
       </div>
-      <div class="blog">
-        <img src="img/strawberry.png" height="220" width="420"  alt="Блог" />
-        <p>Новое в нашем блоге</p>
-        <a class="blog-link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
-      </div>
-      <div class="subscribe">
-      <img src="img/post.png" height="220" width="420"  alt="Форма подписки" />
-        <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-        <form class="subscribe-form" action="index.html" method="post">
-          <input type="text" name="e-mail" value="Электронная почта">
-          <input type="submit" value="Отправить">
-        </form>
+      <div class="news">
+        <div class="blog">
+          <img src="img/strawberry.png" height="220" width="420"  alt="Блог" />
+          <p>Новое в нашем блоге</p>
+          <a class="blog-link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        </div>
+        <div class="subscribe">
+        <img src="img/post.png" height="220" width="420"  alt="Форма подписки" />
+          <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <form class="subscribe-form" action="index.html" method="post">
+            <input type="text" name="e-mail" value="Электронная почта">
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
       </div>
       <div class="map">
         <img src="img/map.jpg" width="900" height="429" alt="Карта" />
-        <div class="contacts">
+        <div class="pin-contacts">
           <p>Адрес главного офиса и офлайн магазина:</p>
           <p class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p>Для заказов по телефону:</p>
@@ -172,7 +174,7 @@
 
 <!-- Ховер обратной связи -->
 
-      <div class="feedback">
+      <!-- <div class="feedback">
         <form class="feedback-form" action="index.html" method="post">
           <p class="feedback-form-title">Мы обязательно вам ответим!</p>
           <input type="text" name="name" value="Как вас зовут?">
@@ -180,20 +182,21 @@
           <textarea name="message">Напишите что-нибудь...</textarea>
           <input type="button" name="name" value="Отправить">
         </form>
-      </div>
+      </div> -->
 
 <!-- Конец обратной связи -->
 
 
     </main>
-    <footer>
+    <footer class="main-footer">
+      <div class="container clearfix">
       <section class="social">
         <a class="social-btn social-btn-vk" href="#">Твитер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </section>
-      <section class="about">
+      <section class="links">
         <a href="#">Для поставщиков</a>
         <a href="#">О производстве</a>
         <a href="#">Наши документы</a>
@@ -203,6 +206,7 @@
         <img src="img/logo-html.svg" height="36" width="107" alt="HTML Academy" />
         <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
       </section>
+    </div>
     </footer>
 
   </body>
